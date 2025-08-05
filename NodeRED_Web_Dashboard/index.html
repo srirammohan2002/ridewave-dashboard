@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vehicle Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="Company Logo" class="logo" />
+    <div class="button-group">
+      <button onclick="setMode(0)">MODE 0</button>
+      <button onclick="setMode(1)">MODE 1</button>
+      <button onclick="setMode(2)">MODE 2</button>
+      <button onclick="setMode('off')">OFF</button>
+    </div>
+    <div class="gauges">
+      <canvas id="wheelGauge"></canvas>
+      <canvas id="rpmGauge"></canvas>
+      <canvas id="effGauge"></canvas>
+    </div>
+    <div class="chart-container">
+      <canvas id="dampingChart"></canvas>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
